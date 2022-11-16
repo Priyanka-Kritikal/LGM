@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UploadTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UploadTests(failed)">
+    <classes>
+      <class name="com.herokuapp.theinternet.UploadTests.UploadTest">
+        <methods>
+          <include name="imageUploadTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.UploadTests.UploadTest -->
+    </classes>
+  </test> <!-- UploadTests(failed) -->
+</suite> <!-- Failed suite [UploadTestSuite] -->

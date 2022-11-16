@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Creatjob" parallel="tests">
+
+	<test thread-count="5" name="AddJob" >
+	<classes>
+			 
+		<class name="us.littleguys.testestimator.AddJob.AddJob" >
+		<parameter name = "firstname" value ="bbbsdfsdftxon" />
+		<parameter name = "lastname" value ="rrr3sdfdsfsfr" />
+		<parameter name = "PhoneNo" value ="9922338844" />
+		<parameter name= "email" value ="viudf234324@gmail.com" />
+		</class>
+		
+		</classes>
+	</test>
+</suite>

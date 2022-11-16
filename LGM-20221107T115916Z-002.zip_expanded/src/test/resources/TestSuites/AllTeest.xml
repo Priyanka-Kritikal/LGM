@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FullTestSuite" verbose="1"  thread-count="4">
+
+	<test name="CreateTicket">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name = "email" value ="ashwinikadiyan4@gmail.com" />
+		<parameter name = "Subject" value ="Furniture" />
+		<parameter name = "Name" value ="Ashwini" />
+		<parameter name= "Description" value ="Test Description" />
+		<parameter name = "dropdownvalue" value ="3" />
+		<classes>
+			<class name="us.littleguys.testestimator.CreateTicket.CreateTicket" />
+		</classes>
+	</test>
+
+	<test name="CustomerPageTest">
+		<parameter name = "firstname" value ="Ashwini" />
+		<parameter name = "lastname" value ="Chaudhary" />
+		<parameter name = "phone" value ="0981239704" />
+		<parameter name= "email" value ="12nm324sd322sqhf4@gmail.com" />
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="us.littleguys.testestimator.CustomerPageTest.AddCustomer">
+			</class>
+		</classes>
+	</test>
+	
+	<test name = "CreateTemplate">
+	<parameter name = "templateName" value ="TestTemplate123" />
+	<parameter name = "templateSubject" value ="TestTemplateSubject123" />
+	<classes>
+	<class name="us.littleguys.testestimator.EmailTemplates.CreateEmailTemplate" >
+		</class>
+		</classes>
+	</test>
+	
+	</suite>

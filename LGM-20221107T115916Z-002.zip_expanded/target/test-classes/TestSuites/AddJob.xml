@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Creatjob" parallel="tests">
+
+	<test thread-count="5" name="AddJob" >
+	<classes>
+			 
+		<class name="us.littleguys.testestimator.AddJob.AddJob" >
+		
+		</class>
+		
+		</classes>
+	</test>
+</suite>

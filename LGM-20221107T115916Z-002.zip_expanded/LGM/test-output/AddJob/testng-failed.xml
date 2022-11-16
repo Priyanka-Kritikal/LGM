@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AddJob]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="CreateJob(failed)">
+    <parameter name="password" value="Shammu7193$"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="sudhir.ssh@gmail.com"/>
+    <classes>
+      <class name="LGM.LoginTest.AddJob">
+        <methods>
+          <include name="AddJob"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- LGM.LoginTest.AddJob -->
+    </classes>
+  </test> <!-- CreateJob(failed) -->
+</suite> <!-- Failed suite [AddJob] -->

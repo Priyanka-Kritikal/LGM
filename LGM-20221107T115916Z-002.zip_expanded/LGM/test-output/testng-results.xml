@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-07T10:11:40 IST" name="Creatjob" finished-at="2022-11-07T10:12:09 IST" duration-ms="28894">
+    <groups>
+    </groups>
+    <test started-at="2022-11-07T10:11:40 IST" name="AddJob" finished-at="2022-11-07T10:12:09 IST" duration-ms="28894">
+      <class name="us.littleguys.testestimator.AddJob.AddJob">
+        <test-method is-config="true" signature="setUp(java.lang.String,org.testng.ITestContext)[pri:0, instance:us.littleguys.testestimator.AddJob.AddJob@a530d0a]" started-at="2022-11-07T10:11:41 IST" name="setUp" finished-at="2022-11-07T10:11:52 IST" duration-ms="11091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@273444fe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddJob(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:us.littleguys.testestimator.AddJob.AddJob@a530d0a]" started-at="2022-11-07T10:11:52 IST" name="AddJob" finished-at="2022-11-07T10:12:09 IST" duration-ms="17092" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bbbsdfsdftxon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rrr3sdfdsfsfr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9922338844]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[viudf234324@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='xycaeh9xt']/div[@role='alert'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ASHWNI~1.KAD\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65534/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65a061db53ae6ec6da4441972d9858a8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id='xycaeh9xt']/div[@role='alert'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ASHWNI~1.KAD\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:65534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65534/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 65a061db53ae6ec6da4441972d9858a8
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at us.littleguy.testestimator.pages.BasePageObject.waitFor(BasePageObject.java:82)
+at us.littleguy.testestimator.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:92)
+at us.littleguy.testestimator.pages.AddJobPage.getConfirmationMessage(AddJobPage.java:109)
+at us.littleguys.testestimator.AddJob.AddJob.AddJob(AddJob.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddJob -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:us.littleguys.testestimator.AddJob.AddJob@a530d0a]" started-at="2022-11-07T10:12:09 IST" name="tearDown" finished-at="2022-11-07T10:12:09 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- us.littleguys.testestimator.AddJob.AddJob -->
+    </test> <!-- AddJob -->
+  </suite> <!-- Creatjob -->
+</testng-results>

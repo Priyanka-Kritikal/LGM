@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LGMLoginSuite" verbose="1" >
+
+	<test name="PositiveLoginTest-CH">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name = "username" value ="sudhir.ssh@gmail.com"></parameter>
+		<parameter name = "password" value ="Shammu7193$"></parameter>
+		<classes>
+			<class name="us.littleguys.testestimator.Loginpagetests.PositiveLoginTest" />
+			
+		
+		</classes>
+	</test>
+	
+</suite>

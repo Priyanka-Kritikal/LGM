@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LGMLoginSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PositiveLoginTest-CH(failed)">
+    <parameter name="password" value="Shammu7193$"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="sudhir.ssh@gmail.com"/>
+    <classes>
+      <class name="us.littleguys.testestimator.Loginpagetests.PositiveLoginTest">
+        <methods>
+          <include name="logInTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- us.littleguys.testestimator.Loginpagetests.PositiveLoginTest -->
+    </classes>
+  </test> <!-- PositiveLoginTest-CH(failed) -->
+</suite> <!-- Failed suite [LGMLoginSuite] -->

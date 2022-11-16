@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="us.littleguys.testestimator.base.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="CreateTicket(failed)">
+    <classes>
+      <class name="us.littleguys.testestimator.CustomerPageTest.AddCustomer">
+        <parameter name="firstname" value="Ashwini"/>
+        <parameter name="phone" value="1201922134"/>
+        <parameter name="email" value="a3454355g4@gmil.com"/>
+        <parameter name="lastname" value="Chaudhary"/>
+        <methods>
+          <include name="AddCustomer" invocation-numbers="0"/>
+          <include name="AddCustomerWithSameData" invocation-numbers="0"/>
+          <include name="logInTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- us.littleguys.testestimator.CustomerPageTest.AddCustomer -->
+    </classes>
+  </test> <!-- CreateTicket(failed) -->
+</suite> <!-- Failed suite [All Test] -->
